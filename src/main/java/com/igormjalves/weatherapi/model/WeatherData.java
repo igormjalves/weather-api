@@ -19,10 +19,10 @@ public class WeatherData {
     @SequenceGenerator(name = "weather_generator", sequenceName = "weather_seq", allocationSize = 1)
     private Long id;
 
-    @Column(name = "weather_status", length = 100, nullable = false)
+    @Column(name = "weather_status", length = 50, nullable = false)
     private String weatherStatus;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 50, nullable = false)
     private String description;
 
     @Column(name = "date_time", nullable = false)
@@ -43,15 +43,15 @@ public class WeatherData {
     @Column(nullable = false)
     private int humidity;
 
-    @Column(nullable = false)
+    @Column(length = 20, nullable = false)
     private String sunrise;
 
-    @Column(nullable = false)
+    @Column(length = 20, nullable = false)
     private String sunset;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 50, nullable = false)
     private String city;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 50, nullable = false)
     private String country;
 }

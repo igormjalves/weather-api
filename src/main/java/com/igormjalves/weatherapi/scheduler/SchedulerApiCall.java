@@ -17,6 +17,7 @@ public class SchedulerApiCall {
     private final WeatherApiService weatherApiService;
     private final WeatherDataRepository weatherDataRepository;
     private final WeatherDataMapper weatherDataMapper;
+    private final long scheduledInterval = 30000L;
 
     public SchedulerApiCall(WeatherApiService weatherApiService, WeatherDataRepository weatherDataRepository, WeatherDataMapper weatherDataMapper) {
         this.weatherApiService = weatherApiService;
@@ -24,8 +25,7 @@ public class SchedulerApiCall {
         this.weatherDataMapper = weatherDataMapper;
     }
 
-    //@Scheduled(fixedRate = 660000)
-    @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = scheduledInterval)
     public void makeAPICallAndSaveToDataBase(){
         WeatherDataDTO weatherDataDTO = weatherApiService.getWeatherDataFromOpenAPI();
         if(weatherDataDTO != null) {
