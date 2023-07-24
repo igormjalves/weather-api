@@ -20,7 +20,7 @@ The goal is to create a job that queries a weather API at a configurable interva
 ## Installation
 
 1. Clone the project
-2. Check prerequisites: Java JDK, Apache Maven, IDE (IntelliJ IDEA, Eclipse, VSCode).
+2. Check prerequisites: Java SDK 1.8, Apache Maven 3.X, Postgres 14, and an IDE (IntelliJ IDEA, Eclipse, VSCode).
 3. Import as a Maven project
 4. Build the project: Once the project is imported, build it using Maven:
 <!-- -->
@@ -35,6 +35,26 @@ The goal is to create a job that queries a weather API at a configurable interva
 ### Get all the weather records
 <!-- -->
     http://localhost:8080/api/weatherdata/
+
+    RESPONSE:
+    [
+      {
+        "id": 12444,
+        "weatherStatus": "Clouds",
+        "description": "nuvens dispersas",
+        "dateTime": "2023-07-24T12:40:56",
+        "temp": 27.29,
+        "feelsLike": 29.75,
+        "tempMin": 27.29,
+        "tempMax": 27.29,
+        "humidity": 74,
+        "sunrise": "05:39:33",
+        "sunset": "17:18:47",
+        "city": "Maceió",
+        "country": "BR"
+      },
+      ...
+    ]
 
 ### Get the weather records in a date range (Date and Time)
 <!-- -->
