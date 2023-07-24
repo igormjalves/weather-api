@@ -93,4 +93,5 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 ## Future Improvements
 
-[Specify the license under which your project is distributed. Choose an open-source license that suits your needs, and include the license text in a separate file if required.]
+- Pagination
+- Sorting
