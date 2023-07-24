@@ -10,7 +10,6 @@ Java API using Spring Boot, consisting in a weather Data API collected from a Op
   - [API Documentation (if applicable)](#api-documentation-if-applicable)
   - [Configuration](#configuration)
   - [Contributing](#contributing)
-  - [Bugs and Issues](#bugs-and-issues)
   - [Future Improvements](#future-improvements)
 
 ## Introduction
@@ -34,9 +33,9 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 ### Get all the weather records
 <!-- -->
-    http://localhost:8080/api/weatherdata/
+    GET /api/weatherdata
 
-    RESPONSE:
+    RESPONSE: 200 OK
     [
       {
         "id": 12444,
@@ -58,7 +57,27 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 ### Get the weather records in a date range (Date and Time)
 <!-- -->
-    http://localhost:8080/api/weatherdata/interval?startDateTime=24/07/2023+12:00:00&endDateTime=24/07/2023+15:00:00
+    GET /api/weatherdata/interval?startDateTime=24/07/2023+12:00:00&endDateTime=24/07/2023+15:00:00
+
+    RESPONSE: 200 OK
+    [
+      {
+        "id": 12444,
+        "weatherStatus": "Clouds",
+        "description": "nuvens dispersas",
+        "dateTime": "2023-07-24T12:40:56",
+        "temp": 27.29,
+        "feelsLike": 29.75,
+        "tempMin": 27.29,
+        "tempMax": 27.29,
+        "humidity": 74,
+        "sunrise": "05:39:33",
+        "sunset": "17:18:47",
+        "city": "Maceió",
+        "country": "BR"
+      },
+      ...
+    ]
 
 ## API Documentation (if applicable)
 
@@ -71,10 +90,6 @@ The goal is to create a job that queries a weather API at a configurable interva
 ## Contributing
 
 [Explain how others can contribute to your project. Include guidelines for submitting pull requests, reporting issues, and any coding standards you follow.]
-
-## Bugs and Issues
-
-[If you have known bugs or issues, provide a link to the issue tracker or describe how users can report problems they encounter.]
 
 ## Future Improvements
 
