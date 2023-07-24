@@ -20,12 +20,16 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 ## Installation
 
-1. Clone the project: Clone the project repository from GitHub or any other version control system to your local machine. You can use Git for this purpose.
-2. Check prerequisites: Ensure that you have the required tools and software installed on your machine to build and run the Spring Maven project. This includes Java JDK, Apache Maven, and an Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse.
-3. Import the project: Open your preferred IDE and import the project as a Maven project. Most modern IDEs support Maven projects out-of-the-box, making the process straightforward.
-4. Build the project: Once the project is imported, build it using Maven. You can either use the IDE's built-in Maven integration or run the following command in the terminal or command prompt from the project's root directory:
+1. Clone the project
+2. Check prerequisites: Java JDK, Apache Maven, IDE (IntelliJ IDEA, Eclipse, VSCode).
+3. Import as a Maven project
+4. Build the project: Once the project is imported, build it using Maven:
 <!-- -->
     mvn clean install
+
+5. Run the project via IDE or Command Line:
+<!-- -->
+    mvn spring-boot:run
 
 ## Usage
 
