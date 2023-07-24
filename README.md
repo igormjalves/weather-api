@@ -11,8 +11,7 @@ Java API using Spring Boot, consisting in a weather Data API collected from a Op
   - [Configuration](#configuration)
   - [Contributing](#contributing)
   - [Bugs and Issues](#bugs-and-issues)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
+  - [Future Improvements](#future-improvements)
 
 ## Introduction
 
@@ -33,7 +32,13 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 ## Usage
 
-[Explain how to use the project, including examples and explanations of available features. If it's a web application, provide the URL to access it. If it's a library or API, include code samples and guidelines.]
+### Get all the weather records
+<!-- -->
+    http://localhost:8080/api/weatherdata/
+
+### Get the weather records in a date range (Date and Time)
+<!-- -->
+    http://localhost:8080/api/weatherdata/interval?startDateTime=24/07/2023+12:00:00&endDateTime=24/07/2023+15:00:00
 
 ## API Documentation (if applicable)
 
@@ -51,10 +56,6 @@ The goal is to create a job that queries a weather API at a configurable interva
 
 [If you have known bugs or issues, provide a link to the issue tracker or describe how users can report problems they encounter.]
 
-## License
+## Future Improvements
 
 [Specify the license under which your project is distributed. Choose an open-source license that suits your needs, and include the license text in a separate file if required.]
-
-## Acknowledgements
-
-[List any individuals, projects, or resources that you want to acknowledge for their contributions or support in your project.]
