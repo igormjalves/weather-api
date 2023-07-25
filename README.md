@@ -1,6 +1,6 @@
 # Weather API
 
-Java API using Spring Boot, consisting in a weather Data API collected from a Open Weather API using a scheduled task. It is also possible to consult weather records by period.
+Java API using Spring Boot, consisting in a weather Data API collected from [Open Weather API](https://openweathermap.org/api) using a scheduled task. It is also possible to consult weather records by period.
 
 ## Table of Contents
 
