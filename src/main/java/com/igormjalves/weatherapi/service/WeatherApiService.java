@@ -10,12 +10,11 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class WeatherApiService {
 
-    private final String apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-9.54335205&lon=-35.707791630357235&units=metric&lang=pt_br&appid={apiKey}";
-
     @Value("${openweather.api.key}")
     private String apiKey;
 
     public WeatherDataDTO getWeatherDataFromOpenAPI() {
+        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-9.54335205&lon=-35.707791630357235&units=metric&lang=pt_br&appid={apiKey}";
         String url = apiUrl.replace("{apiKey}", apiKey);
         RestTemplate restTemplate = new RestTemplate();
         WeatherApiResponse result = restTemplate.getForObject(url, WeatherApiResponse.class);

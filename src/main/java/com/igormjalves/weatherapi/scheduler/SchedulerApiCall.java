@@ -17,7 +17,7 @@ public class SchedulerApiCall {
     private final WeatherApiService weatherApiService;
     private final WeatherDataRepository weatherDataRepository;
     private final WeatherDataMapper weatherDataMapper;
-    private final long scheduledInterval = 30000L;
+    private final long scheduledInterval = 660000L;
 
     public SchedulerApiCall(WeatherApiService weatherApiService, WeatherDataRepository weatherDataRepository, WeatherDataMapper weatherDataMapper) {
         this.weatherApiService = weatherApiService;
