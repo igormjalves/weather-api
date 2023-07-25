@@ -33,6 +33,6 @@ public class SchedulerApiCall {
             System.out.println("Weather data saved at:" + LocalDateTime.now());
         } else {
             System.out.println("Failed to fetch data.");
-        };
+        }
     }
 }
