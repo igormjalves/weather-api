@@ -30,8 +30,8 @@ public class WeatherApiService {
             weatherDataDTO.setTempMin(result.getMain().getTemp_min());
             weatherDataDTO.setTempMax(result.getMain().getTemp_max());
             weatherDataDTO.setHumidity(result.getMain().getHumidity());
-            weatherDataDTO.setSunset(DateTimeUtil.parseTime(result.getSys().getSunset()+result.getTimezone()));
-            weatherDataDTO.setSunrise(DateTimeUtil.parseTime(result.getSys().getSunrise()+result.getTimezone()));
+            weatherDataDTO.setSunset(DateTimeUtil.parseTimetoString(result.getSys().getSunset()+result.getTimezone()));
+            weatherDataDTO.setSunrise(DateTimeUtil.parseTimetoString(result.getSys().getSunrise()+result.getTimezone()));
             weatherDataDTO.setCountry(result.getSys().getCountry());
             weatherDataDTO.setCity(result.getName());
             weatherDataDTO.setDateTime(DateTimeUtil.parseDateTime(result.getDt()+result.getTimezone()));

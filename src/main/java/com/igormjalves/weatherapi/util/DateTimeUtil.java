@@ -20,7 +20,7 @@ public class DateTimeUtil {
                 .toLocalDateTime();
     }
 
-    public static String parseTime(long dateTimeUnix) {
+    public static String parseTimetoString(long dateTimeUnix) {
         return Instant
                 .ofEpochSecond(dateTimeUnix)
                 .atZone(ZoneOffset.UTC)
