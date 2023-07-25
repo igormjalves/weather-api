@@ -14,7 +14,7 @@ Java API using Spring Boot, consisting in a weather Data API collected from a Op
 
 ## Introduction
 
-The goal is to create a job that queries a weather API at a configurable interval and records updated data for one specific city, in a PostgreSQL database. In addition, an endpoint was created to query the temperature records, allowing the user to specify a date range for the query.
+The goal is to create a job that queries a weather API at a configurable scheduled interval and records updated data for one specific city, in a PostgreSQL database. In addition, an endpoint was created to query the temperature records, allowing the user to specify a date range for the query.
 
 ## Installation
 
@@ -79,19 +79,10 @@ The goal is to create a job that queries a weather API at a configurable interva
       ...
     ]
 
-## API Documentation (if applicable)
+## Data Reference
 
-[If your project exposes an API, provide detailed API documentation here. Include the endpoints, request parameters, response format, and any authentication required.]
+https://openweathermap.org/api
 
-## Configuration
+## ToDo
 
-[Explain any configuration options available for the project, along with how to set them. This could include environment variables, configuration files, or database setup.]
-
-## Contributing
-
-[Explain how others can contribute to your project. Include guidelines for submitting pull requests, reporting issues, and any coding standards you follow.]
-
-## Future Improvements
-
-- Pagination
-- Sorting
+- Insert data from other places and include new input parameters to allow more refined searches  
