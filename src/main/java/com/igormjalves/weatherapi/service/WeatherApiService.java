@@ -13,8 +13,10 @@ public class WeatherApiService {
     @Value("${openweather.api.key}")
     private String apiKey;
 
+    @Value("${openweather.api.url}")
+    private String apiUrl;
+
     public WeatherDataDTO getWeatherDataFromOpenAPI() {
-        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-9.54335205&lon=-35.707791630357235&units=metric&lang=pt_br&appid={apiKey}";
         String url = apiUrl.replace("{apiKey}", apiKey);
         RestTemplate restTemplate = new RestTemplate();
         WeatherApiResponse result = restTemplate.getForObject(url, WeatherApiResponse.class);
