@@ -79,6 +79,10 @@ The goal is to create a job that queries a weather API at a configurable schedul
       ...
     ]
 
+## Documentation
+
+http://localhost:8080/swagger-ui/index.html
+
 ## Data Reference
 
 https://openweathermap.org/api
